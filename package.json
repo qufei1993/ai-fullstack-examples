@@ -1,0 +1,18 @@
+{
+  "name": "ai-fullstack-examples",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prompt:temperature": "tsx --env-file=.env examples/ai-coding/prompt-engineering/01-temperature.ts",
+    "prompt:few-shot": "tsx --env-file=.env examples/ai-coding/prompt-engineering/02-few-shot.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.92.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
