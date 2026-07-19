@@ -7,7 +7,8 @@
     "prompt:few-shot": "tsx --env-file=.env examples/ai-coding/prompt-engineering/02-few-shot.ts"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.92.0"
+    "@anthropic-ai/sdk": "^0.92.0",
+    "zod": "^4.4.1"
   },
   "devDependencies": {
     "tsx": "^4.21.0"
