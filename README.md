@@ -62,6 +62,18 @@ npx tsx --env-file=.env examples/core-methods/structured-output/bailian-streamin
 npx tsx --env-file=.env examples/core-methods/structured-output/parse-with-retry.ts
 ```
 
+## Context Engineering
+
+示例目录：`examples/core-methods/context-engineering/`
+
+- `rolling-summary.ts`：将较早的对话增量压缩成摘要，同时保留最近几轮原文
+
+运行方式：
+
+```bash
+npx tsx --env-file=.env examples/core-methods/context-engineering/rolling-summary.ts
+```
+
 ## 安全说明
 
 - 仓库不包含真实 API Key、账号凭据或本地 `.env`
