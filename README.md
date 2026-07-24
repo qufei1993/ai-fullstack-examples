@@ -6,8 +6,8 @@
 
 `examples/` 下的一级目录按技术模块划分，不按课程阶段划分。课程阶段决定学习和发布顺序，技术模块用于保持示例路径稳定，两者不是同一维度。
 
-- `ai-coding/`：Prompt Engineering、MCP、Skills 和 Coding Agent 协作等 AI 编程示例
-- `core-methods/`：结构化输出、Context Engineering、Harness Engineering 和 Prompt 回归等 LLM 应用开发核心方法
+- `ai-coding/`：Prompt Engineering、Context Engineering、MCP、Skills 和 Coding Agent 协作等 AI 编程示例
+- `core-methods/`：结构化输出、Harness Engineering 和 Prompt 回归等 LLM 应用开发核心方法
 
 结构化输出属于课程第一阶段的 LLM 工程基础，同时也是 AI 应用开发的核心方法，因此放在 `examples/core-methods/structured-output/`。
 
@@ -64,14 +64,14 @@ npx tsx --env-file=.env examples/core-methods/structured-output/parse-with-retry
 
 ## Context Engineering
 
-示例目录：`examples/core-methods/context-engineering/`
+示例目录：`examples/ai-coding/context-engineering/`
 
 - `rolling-summary.ts`：将较早的对话增量压缩成摘要，同时保留最近几轮原文
 
 运行方式：
 
 ```bash
-npx tsx --env-file=.env examples/core-methods/context-engineering/rolling-summary.ts
+npx tsx --env-file=.env examples/ai-coding/context-engineering/rolling-summary.ts
 ```
 
 ## 安全说明

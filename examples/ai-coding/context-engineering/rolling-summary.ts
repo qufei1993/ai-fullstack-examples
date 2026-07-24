@@ -1,5 +1,5 @@
 // 滚动摘要：多轮对话的上下文压缩示例
-// 运行方式：npx tsx --env-file=.env examples/core-methods/context-engineering/rolling-summary.ts
+// 运行方式：npx tsx --env-file=.env examples/ai-coding/context-engineering/rolling-summary.ts
 
 import Anthropic from "@anthropic-ai/sdk";
 
