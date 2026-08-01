@@ -74,6 +74,15 @@ npx tsx --env-file=.env examples/core-methods/structured-output/parse-with-retry
 npx tsx --env-file=.env examples/ai-coding/context-engineering/rolling-summary.ts
 ```
 
+## Spec-Driven Development
+
+示例目录：`examples/ai-coding/spec-driven/`
+
+- `spec-kit/`：保存 Spec Kit 生成的规格产物和 `ai-commit` 最终实现
+- `openspec/`：保存 OpenSpec 归档后的规格产物和 `ai-commit` 最终实现
+
+完整说明和运行命令见 [`examples/ai-coding/spec-driven/README.md`](examples/ai-coding/spec-driven/README.md)。
+
 ## 安全说明
 
 - 仓库不包含真实 API Key、账号凭据或本地 `.env`
