@@ -74,6 +74,20 @@ npx tsx --env-file=.env examples/core-methods/structured-output/parse-with-retry
 npx tsx --env-file=.env examples/ai-coding/context-engineering/rolling-summary.ts
 ```
 
+## Harness Engineering
+
+示例目录：`examples/core-methods/harness-engineering/`
+
+- `minimal-harness.ts`：实现工具注册、文件访问权限检查、工具调用循环和最大轮次限制
+
+运行方式：
+
+```bash
+npx tsx --env-file=.env examples/core-methods/harness-engineering/minimal-harness.ts
+```
+
+示例运行后会生成 `output.txt`，该文件已被 Git 忽略。
+
 ## Spec-Driven Development
 
 示例目录：`examples/ai-coding/spec-driven/`
