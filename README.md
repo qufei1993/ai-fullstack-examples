@@ -8,6 +8,7 @@
 
 - `ai-coding/`：Prompt Engineering、Context Engineering、MCP、Skills 和 Coding Agent 协作等 AI 编程示例
 - `core-methods/`：结构化输出、Harness Engineering 和 Prompt 回归等 LLM 应用开发核心方法
+- `rag/`：文档处理、向量检索、重排、引用与评测等 RAG 工程示例
 
 结构化输出属于课程第一阶段的 LLM 工程基础，同时也是 AI 应用开发的核心方法，因此放在 `examples/core-methods/structured-output/`。
 
@@ -96,6 +97,30 @@ npx tsx --env-file=.env examples/core-methods/harness-engineering/minimal-harnes
 - `openspec/`：保存 OpenSpec 归档后的规格产物和 `ai-commit` 最终实现
 
 完整说明和运行命令见 [`examples/ai-coding/spec-driven/README.md`](examples/ai-coding/spec-driven/README.md)。
+
+## RAG 文档解析、清洗与切片
+
+示例目录：`examples/rag/document-parsing-chunking/`
+
+- `text-clean-demo.ts`：对比 PDF 文本清洗前后的变化
+- `chunking-strategies-demo.ts`：对比 Fixed-size 与 Recursive 切片
+- `parse-and-chunk.ts`：解析样例 PDF，清洗文本、添加 overlap 并生成带元数据的 JSON 切片
+- `sample-document.pdf`：可以直接运行的样例文档
+
+运行方式：
+
+```bash
+npx tsx --env-file=.env examples/rag/document-parsing-chunking/text-clean-demo.ts
+npx tsx --env-file=.env examples/rag/document-parsing-chunking/chunking-strategies-demo.ts
+npx tsx --env-file=.env examples/rag/document-parsing-chunking/parse-and-chunk.ts \
+  examples/rag/document-parsing-chunking/sample-document.pdf
+```
+
+回归测试：
+
+```bash
+npx tsx --test examples/rag/document-parsing-chunking/*.test.ts
+```
 
 ## 安全说明
 

@@ -12,6 +12,7 @@
     "chalk": "^6.0.0",
     "commander": "^15.0.0",
     "openai": "^7.3.0",
+    "pdf-parse": "^2.4.5",
     "zod": "^4.4.1"
   },
   "devDependencies": {
